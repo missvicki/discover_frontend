@@ -1,0 +1,39 @@
+.banner {
+  display: grid;
+  grid-template-columns: 150px auto;
+  background-color: white;
+}
+
+
+img {
+  width: 150px;
+  grid-column: 1/2;
+}
+
+.banner span {
+  display: none;
+}
+
+.header-title {
+  grid-column: 2/3;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 2.3em;
+  justify-self: start;
+  align-self: center;
+  text-align: left;
+  margin: 8px 0 0 15px;
+  color: var(--bright-blue);
+}
+
+.navbar-start .navbar-item:hover {
+  color: var(--navy-blue);
+}
+
+.duke-blue{
+  color:var(--navy-blue);
+}
+
+.inline-right{
+  display:inline-flex;
+}

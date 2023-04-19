@@ -1,0 +1,25 @@
+version: '3'
+services:
+  app:
+    build: .
+    command: npm start
+    # command: "serve -s build -l 8080"
+    volumes:
+     - .:/srv/app # please note the .env file sets a var that allows this to work on windows
+     - node-modules-volume:/srv/app/node_modules # this mount keeps node_modules from getting wiped when we mount the container
+    ports:
+     - "8080:8080"
+    environment:
+      ### can toggle between these two if you need to run against local dev, or remote dev
+      REACT_APP_DISCOVER_API_HOST: http://localhost:3000/api/v1
+      # REACT_APP_DISCOVER_API_HOST: https://project-discover-api-dev-colab-sandbox.cloud.duke.edu/api/v1
+      ###
+      REACT_APP_OAUTH_REDIRECT_URI: http://localhost:8080/oauth/consume
+      REACT_APP_SAML_ACS: http://localhost:3000/api/v1/saml/consume
+      APP_ENVIRONMENT: development
+    stdin_open: true
+    tty: true
+    container_name: discover_gui
+volumes:
+  node-modules-volume:
+    

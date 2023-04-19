@@ -1,0 +1,161 @@
+@import "~bulma/css/bulma.min.css";
+
+@import "reset.css";
+@import "golden-ratio.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap"');
+@import "components.css";
+@import "profile.css";
+@import "about.css";
+@import "home.css";
+@import "project.css";
+@import "people.css";
+@import "universal-search.css";
+
+
+:root {
+  --bright-blue: #2A75B1;
+  --navy-blue: #001A57;
+  --yellow: #E5C359;
+  --bright-green: #00C64C;
+  --red: #C60000;
+}
+
+.green{
+  color: green;
+}
+
+.red{
+  color: var(--red);
+}
+
+.yellow{
+  color: var(--yellow)
+}
+
+.blue{
+  color: var(--navy-blue)
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 80%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  font: 12px 'Lato', sans-serif;
+}
+
+.right{
+  left:110%;
+  box-shadow: rgba(0, 0, 0, 0.3) -2px 2px 4px;
+}
+
+.left{
+  right:110%;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 4px;
+
+}
+
+.right::after {
+  content: " ";
+  position: absolute;
+  top: 20%;
+  right: 100%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent white transparent transparent;
+  filter: drop-shadow(rgba(0, 0, 0, 0.3) -3px 0px 2px);
+
+}
+
+.left::after {
+  content: " ";
+  position: absolute;
+  top: 20%;
+  left: 100%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent white;
+  filter:drop-shadow(rgba(0, 0, 0, 0.3) 3px 0px 2px);
+
+}
+
+.tooltip:hover .tooltiptext{
+  visibility: visible;
+}
+
+.blue-button{
+  cursor: pointer;
+  display: block;
+  background-color: var(--navy-blue);
+  color: white;
+  text-align:center;
+  text-decoration: none;
+  padding: 10px 0%;
+  font: bold 15px 'Open Sans', sans-serif;
+  border-radius: 35px;
+  width: 23%;
+  margin: 20px auto;
+}
+
+.blue-button:visited {
+  color:white;
+}
+
+.blue-button:hover {
+  background-color: #0e2a6d;
+}
+
+.red-button{
+  cursor: pointer;
+  display: block;
+  background-color: var(--red);
+  color: white;
+  text-align:center;
+  text-decoration: none;
+  padding: 10px 0%;
+  font: bold 15px 'Open Sans', sans-serif;
+  border-radius: 35px;
+  border-width: 0;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.red-button:visited {
+  color:white;
+}
+
+.red-button:hover {
+  background-color: #c43434;
+}
+
+.white{
+  color: white;
+}
+
+.search-bar::placeholder{
+  font-size: 14px;
+}
+.search-bar::-webkit-input-placeholder {
+  font-size: 14px;
+}
+.search-bar::-moz-placeholder {
+  font-size: 14px;
+}
+.search-bar:-ms-input-placeholder {
+  font-size: 14px;
+}

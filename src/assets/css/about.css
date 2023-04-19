@@ -1,0 +1,147 @@
+/* About Page */
+
+.button-about{
+    cursor: pointer;
+    display: block;
+    background-color: var(--navy-blue);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 0%;
+    font: bold 14px 'Open Sans', sans-serif;
+    border-radius: 35px;
+    width: 50%;
+    margin: 15px auto;
+}
+
+.yellow-button{
+    cursor: pointer;
+    display: inline-block;
+    background-color: var(--yellow);
+    color: white;
+    text-align:center;
+    text-decoration: none;
+    padding: 10px 0%;
+    font: bold 14px 'Open Sans', sans-serif;
+    border-radius: 35px;
+    width: 20%;
+    margin: 15px auto; 
+    align-self: center;
+    
+}
+
+.centre {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.yellow-button:hover{
+    background-color: var(--navy-blue);
+    color: white;
+}
+
+
+.subtitle-blue{
+    font: bold x-large 'Open Sans', sans-serif;
+    color: var(--navy-blue);
+    margin: 15px auto;
+}
+
+.subtitle-big{
+    font: bold 30px 'Open Sans', sans-serif;
+    text-align: center;
+    color: var(--navy-blue);
+    margin: 15px auto;
+}
+
+.subtitle-medium{
+    font: bold 25px 'Open Sans', sans-serif;
+    text-align: center;
+    color: var(--navy-blue);
+    margin: 15px auto;
+}
+
+.what-now{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.answer{
+    font: 1em 'Open Sans', sans-serif;
+    text-align: left;
+    color: black;
+    margin: auto;
+    margin-left: 10px;
+}
+
+.about-background{
+    background-color: #F8F8F8;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.about-right{
+    margin-right: 20%;  
+}
+  
+
+.floatcard-about{
+    background-color: #ffffff;
+    -webkit-box-shadow: 10px 9px 9px 0px rgba(0,0,0,0.06);
+    -moz-box-shadow: 10px 9px 9px 0px rgba(0,0,0,0.06);
+    box-shadow: 10px 9px 9px 0px rgba(0,0,0,0.06); 
+    padding: 10px;
+    margin-top: 10px;
+    font: 15px 'Lato', sans-serif;
+    margin: 30px auto;
+    padding-bottom: 10px;
+}
+  
+.floatcard-faq{
+    background-color: #ffffff;
+    -webkit-box-shadow: 10px 9px 9px 0px rgba(0,0,0,0.06);
+    -moz-box-shadow: 10px 9px 9px 0px rgba(0,0,0,0.06);
+    box-shadow: 10px 9px 9px 0px rgba(0,0,0,0.06); 
+    padding: 15px;
+    margin-top: 10px;
+    font: 15px 'Lato', sans-serif;
+    width: 80%;
+    margin: 30px auto 70px;
+    padding-bottom: 25px;
+}
+  
+@media screen and (max-width: 900px) {
+    .floatcard-about.responsive {
+      position: relative;
+      right: 0;
+      top: 0;
+    }
+
+    .floatcard-faq.responsive {
+        position: relative;
+        right: 0;
+        top: 0;
+        max-width: 50%;
+      }
+
+    .column {
+        width: 100%;
+    }
+
+    .yellow-button{
+        font-size: 12px;
+        width: 50%;
+        
+    }
+  }
+
+.display-about{
+    width:80%;
+    margin: 100px auto 150px;
+}

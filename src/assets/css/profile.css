@@ -1,0 +1,194 @@
+.display{
+  width: 70%;
+  margin: auto;
+}
+
+.display-project{
+  width: 80%;
+  margin: auto;
+}
+
+.list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item{
+  width: 50%;
+  margin: 7.5px 0px;
+  font-weight: 15px;
+  font-size:14px;
+}
+
+.icon{
+  color:#E5C359;
+  font-size: 27px;
+  margin-right:15px;
+}
+
+
+.link:hover{
+  color: #0e2a6d;
+  cursor: pointer;
+}
+
+.link-gray:hover{
+  color: rgb(36, 35, 35);
+  cursor: pointer;
+}
+
+.no-image{
+  width: 14vw;
+  height: 14vw;
+  background: #F8F8F8;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 14vw;
+  font-size: 1.4vw;
+  margin-bottom: 10px;
+}
+
+.no-logo{  
+  font-size: 15px;
+  background: #ffffff;
+  border: 1px solid #001A57;
+  color: #001A57;
+  text-align: center;
+  line-height: 100px;
+}
+
+.project-logo{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 10px 15px -20px;
+  float: left;
+  z-index: 1;
+}
+
+.projectpage-logo{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 10px 15px -20px;
+  z-index: 1;
+}
+
+.project{
+  cursor: pointer;
+  background-color: #F5F5F5;
+  position: relative;
+  top: 40px;
+  margin-bottom: 60px;
+}
+
+.project .section-header{
+  margin-bottom: 0px;
+}
+
+.highlight-description{
+  position: relative;
+  height: 7em; /* exactly three lines */
+  overflow: hidden;
+  display: inline-block;
+}
+
+.description {
+  position: relative;
+  height: 7em; /* exactly three lines */
+  overflow: hidden;
+  display: inline-block;
+}
+.description:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1.2em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+}
+
+.description-gray {
+  position: relative;
+  height: 7em; /* exactly three lines */
+  overflow: hidden;
+  display: inline-block;
+}
+.description-gray:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1.2em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #F5F5F5 50%);
+}
+
+#edit{
+  width: 100%;
+  border: none;
+}
+
+.contact{
+  font-size: 12px;
+  list-style: none;
+}
+
+.logo{
+  font-size: 30px;
+  margin: 10px 0px -5px;
+}
+
+#linkedin{
+  color:#13348E;
+}
+
+#github{
+  color:#211F1F
+}
+
+#website{
+  color:rgb(75, 74, 74);
+  font-size: 27px;
+}
+
+.edit-group{
+  margin:5px 5px 0px 0px;
+}
+
+.label{
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.space-left{
+  margin:25px 0px 0px 15px;
+}
+
+.inline{
+  display:inline-flex;
+}
+
+.skill-card{
+  position: relative;
+}
+
+.down{
+  color:#D1D1D1;
+  margin-left:5px;
+}
+
+.skill-card-down{
+  color:#D1D1D1;
+  margin-left:5px;
+  position:absolute;
+  right:10px;
+  top: 22px
+}
+
+
+
+.admin-page{
+  margin-top: 100px;
+}

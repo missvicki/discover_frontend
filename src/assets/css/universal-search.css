@@ -1,0 +1,133 @@
+.subtitle-big-universal{
+    font: bold 30px 'Open Sans', sans-serif;
+    text-align: left;
+    color: white;
+    margin-left: 15px;
+}
+
+.fixed-universal{
+    height:200px;
+}
+
+.searchbar{
+    margin-left: 75%;
+    padding-bottom: 10px;
+}
+
+.admin {
+    margin-left: 40%;
+}
+
+
+.searchbar-admin{
+    color: var(--navy-blue);
+    text-align: center;
+  
+    padding-bottom: 10px;
+}
+
+.project-universal{
+    cursor: pointer;
+    background-color: #ffffff;
+    position: relative;
+    top: 40px;
+    margin-bottom: 60px;
+  }
+
+.people-universal{
+    background-color: #ffffff;
+    position: relative;
+    top: 40px;
+    margin-bottom: 60px;
+}
+.universal-cards{
+    margin-left: 15px;
+    padding-top: -10px;
+    padding-left: 15px;
+    overflow: auto;
+    max-height: 70vh;
+    scrollbar-width: thin;
+    scrollbar-color: var(--navy-blue);
+    
+} 
+.universal-cards::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+}
+
+
+.universal-cards::-webkit-scrollbar-thumb {
+    background-color: var(--navy-blue);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+.is-navy-blue{
+    background-color: var(--navy-blue);
+    color:white;
+}
+
+.is-light-blue{
+    background-color: var(--bright-blue);
+    color:white;
+}
+
+.is-light-blue:hover{
+    background-color: #25689e;
+    color:white;
+}
+
+.is-gray{
+    background-color: #F5F5F5;
+    color:var(--navy-blue);
+    font-weight: 600;
+    border: 1px var(--navy-blue)
+}
+
+.is-gray:hover{
+    background-color:#ecebeb;
+    color:#00133f;
+    border:1px #00133f;
+    font-weight: 600;
+}
+
+.description-universal {
+    position: relative;
+    height: 6em; /* exactly three lines */
+    overflow: hidden;
+    display: inline-block;
+    
+  }
+
+.description-universal:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    height: 1.2em;
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0), background-color 50%); */
+}
+
+.project-name-universal{
+    display: block; /* Fallback for non-webkit */
+    height: 60px; /* Fallback for non-webkit */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-decoration: none;
+    line-height: 1.2em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    /* .project-name-universal{
+        position: absolute;
+        top: 80px;
+        left: 15px;
+    } */
+    .description-universal{
+        position: absolute;
+        top: 80px;
+        left: 15px;
+    }
+}
